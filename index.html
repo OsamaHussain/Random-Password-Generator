@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <div class="container">
+    <div id="rndPassGen" class="rndPassGen prevent-select">
+        <div class="divC">
+            <label for="lowercase">LowerCase</label>
+            <input type="text" name="lowercase" id="lowercase" disabled="disabled">
+            <input type="checkbox" name="lowercaseactive" id="lowercaseactive" checked="checked">
+        </div>
+        <div class="divC">
+            <label for="uppercase">UpperCase</label>
+            <input type="text" name="uppercase" id="uppercase" disabled="disabled">
+            <input type="checkbox" name="uppercaseactive" id="uppercaseactive" checked="checked">
+        </div>
+        <div class="divC">
+            <label for="number">Number</label>
+            <input type="text" name="number" id="number" disabled="disabled">
+            <input type="checkbox" name="numberactive" id="numberactive" checked="checked">
+        </div>
+        <div class="divC">
+            <label for="symbol">Symbol</label>
+            <input type="text" name="symbol" id="symbol" disabled="disabled">
+            <input type="checkbox" name="symbolactive" id="symbolactive" checked="checked">
+        </div>
+        <label for="custom">Custom</label>
+        <input type="text" name="custom" id="custom">
+        <input type="button" value="Generate Password..." id="generate">
+        <label for="output">Generated Password: </label>
+        <input type="text" id="output">
+        <div class="options">
+            <input type="button" value="Copy" id="copy" class="opt">
+            <input type="button" value="Shuffle" id="shuffle" class="opt">
+            <input type="button" value="Reset" id="reset" class="opt">
+        </div>
+    </div>
+    </div>
+    <div class="hiddenMsg hidden" id="hiddenMsg">
+        <div class="msg">
+            <div>Your Randomly Generated Password.....</div>
+            <div>Password Copied to Clipboard: ******** <span id="msg"></span></div>
+        <div>
+        <button id="close">X</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
